@@ -1,12 +1,13 @@
 class Product {
-    constructor(name, price, description, inStock) {
+    constructor(name, price, description) {
         this.name = name;
         this.price = price;
         this.description = description;
         this.inStock = true;
+        this.ingredients = [];
     }
     display(){
-        return "Name: ${NAME}, Price: ${PRICE}, Description: ${DESCRIPTION}"
+        return `Name: ${this.name}, Price: $${this.price}, Description: ${this.description}`
     }
 }
 
